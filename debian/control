@@ -1,0 +1,58 @@
+Source: odtone
+Section: net
+Priority: extra
+Maintainer: Carlos Gonçalves <cgoncalves@av.it.pt>
+Build-Depends: debhelper (>= 8.0.0), cmake, librdf-dev, libboost-thread-dev, libboost-program-options-dev, libboost-system-dev
+Standards-Version: 3.9.3
+Homepage: http://atnog.av.it.pt/odtone
+Vcs-Git: git://github.com/ATNoG/ODTONE.git
+Vcs-Browser: https://github.com/ATNoG/ODTONE
+
+Package: odtone
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Multi-Platform implementation of the IEEE 802.21 Protocol
+ ODTONE stands for Open Dot Twenty ONE and it is an open-source implementation
+ of the Media Independent Handover framework from the IEEE 802.21 Media
+ Independent Handover Services standard, using C++ APIs.
+ ODTONE supplies the implementation of a MIHF, supporting its inherent services
+ (Media Independent Event Service (MIES), Media Independent Command Service
+ (MIIS) and Media Independent Command Service (MICS), as well as supporting
+ mechanisms (Capability Discovery, MIHF Registration, Event Registration, etc.).
+ It also provides a set of APIs to enable ODTONE users to implement their own
+ MIH-Users and Link SAPs and to interface with ODTONE's MIHF.
+ This package includes several applications developed by the ODTONE project.
+
+Package: libodtone-dev
+Section: libdevel
+Architecture: any
+Depends: libodtone (= ${binary:Version}), ${misc:Depends}
+Description: ODTONE headers
+
+Package: libodtone
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Multi-Platform implementation of the IEEE 802.21 Protocol
+ ODTONE stands for Open Dot Twenty ONE and it is an open-source implementation
+ of the Media Independent Handover framework from the IEEE 802.21 Media
+ Independent Handover Services standard, using C++ APIs.
+ ODTONE supplies the implementation of a MIHF, supporting its inherent services
+ (Media Independent Event Service (MIES), Media Independent Command Service
+ (MIIS) and Media Independent Command Service (MICS), as well as supporting
+ mechanisms (Capability Discovery, MIHF Registration, Event Registration, etc.).
+ It also provides a set of APIs to enable ODTONE users to implement their own
+ MIH-Users and Link SAPs and to interface with ODTONE's MIHF.
+ This package includes library files.
+
+Package: libnlwrap-dev
+Section: libdevel
+Architecture: any
+Depends: libnlwrap (= ${binary:Version}), ${misc:Depends}
+Description: libnlwrap headers
+
+Package: libnlwrap
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Libnl wrapper
