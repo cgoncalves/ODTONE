@@ -2,7 +2,7 @@ Source: odtone
 Section: net
 Priority: extra
 Maintainer: Carlos Gonçalves <cgoncalves@av.it.pt>
-Build-Depends: debhelper (>= 8.0.0), cmake, librdf-dev, libboost-thread-dev, libboost-program-options-dev, libboost-system-dev
+Build-Depends: debhelper (>= 8.0.0), cmake, librdf-dev, libboost-thread-dev, libboost-program-options-dev, libboost-system-dev, libnl-3-dev, libnl-route-3-dev, libnl-genl-3-dev
 Standards-Version: 3.9.3
 Homepage: http://atnog.av.it.pt/odtone
 Vcs-Git: git://github.com/ATNoG/ODTONE.git
